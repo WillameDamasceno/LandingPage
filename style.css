@@ -1,0 +1,7 @@
+.wrapper {
+    display: grid;
+    border: 2px solid #00CED1;
+    border-radius: 3px;
+    grid-template-columns: 200px 200px 200px 200px;
+    box-sizing: border-box;
+} 
