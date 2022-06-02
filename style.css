@@ -1,56 +1,83 @@
-body{
-    background-color: #242424;
-}
-main{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@100;300&family=Poller+One&family=Sarala&display=swap');
+/*font-family: 'Anton', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poller One', cursive;
+font-family: 'Sarala', sans-serif;*/
 
-.header {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background: linear-gradient(68.15deg,  #000000 16.62%, #242424 85.61%);
+    font-size: 100%;
+}
+.cabecalho{
     display: flex;
     flex-direction: row;
-
-}
-
-/*Column left*/
-.column_left{
-    display: flex;
-    flex-direction: column;
     align-items: center;
-
-}
-.title{
-    color: #ff7300;
-    font-size: 30px;
+    justify-content: space-around;
+    padding: 24px;
 }
 .logo{
     color: #ffffff;
     display: flex;
+    height: 72px;
+    font-family: 'Poller One', cursive;
+    font-weight: 400;
 }
-p{
-    color: #ffffff;
-}
-.content{
+.cabecalho_menu{
     display: flex;
-    align-items:flex-start;
+    gap: 32px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: 'Sarala', sans-serif;
+}
+
+/*Section content*/
+.content{
+    border-top: 0.4px solid #ffffff;
  
 }
-.button{
-    width: 100px;
-    height: 50px;
-    display: grid;
-
+.content_main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
-
-/*Column right*/
-.column_right{
-    display: grid;
-
+.content_main_written{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.title{
+    color: #ff7300;
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+}
+.subtitle{
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.content_main_button{
+    background-color: #ffffff;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 2px 3px 2px #ff7300;
+    border-radius: 20px;
+    
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    color: #ff7300;
+    font-size: 25px;
 }
 .image{
-    display: flex;
-    width:  350px;
+    width: 450px;
     height: 550px;
-    align-items: center;
 }
